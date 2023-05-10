@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_main_income">
+
+    <TextView
+        android:id="@+id/itotallable"
+        android:layout_width="146dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="7dp"
+        android:text="Total Amount="
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/rvincome"
+        app:layout_constraintEnd_toStartOf="@+id/totalincome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalincome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="21dp"
+        android:text=""
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/rvincome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itotallable"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvincome"
+        android:layout_width="565dp"
+        android:layout_height="658dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/income_list_item" />
+
+    <TextView
+        android:id="@+id/itvLoadingData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading Data....."
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/budgetAddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#566AD8"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/White"
+        tools:layout_editor_absoluteY="601dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

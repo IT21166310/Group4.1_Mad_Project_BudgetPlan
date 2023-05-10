@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:scrollbars="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="new goal"
+                android:id="@+id/loginText"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                ></TextView>
+            <EditText
+                android:id="@+id/goalName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/newgoal"
+                android:hint="new Goal"
+                android:padding="8dp"></EditText>
+
+            <EditText
+                android:id="@+id/targetAmount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/newgoal"
+                android:hint="Target Amount"
+                android:padding="8dp"></EditText>
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/newgoal"
+                android:hint="Desired Date"
+                android:padding="8dp"
+
+                ></EditText>
+
+            <EditText
+                android:id="@+id/addamount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/newgoal"
+                android:hint="AddAmount"
+                android:padding="8dp"></EditText>
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/newgoal"
+                android:hint="Note"
+                android:padding="8dp"></EditText>
+
+            <Button
+                android:id="@+id/addgoal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#374FD5"
+                android:text="Add Goal"
+                android:textColor="@color/White"
+                android:textSize="18sp"></Button>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

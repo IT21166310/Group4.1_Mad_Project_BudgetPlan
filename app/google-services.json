@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "635416607414",
+    "project_id": "moneywallet-17816",
+    "storage_bucket": "moneywallet-17816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635416607414:android:7426a0f918f0f2b52f8417",
+        "android_client_info": {
+          "package_name": "com.example.myjob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635416607414-5cag5doooai4noupgr866vnjtjfbcak4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLZBmGnxG2LWOgX0vzWmKGm27YWFXi-ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635416607414-5cag5doooai4noupgr866vnjtjfbcak4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
